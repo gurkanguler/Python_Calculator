@@ -14,8 +14,10 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(428, 405)
+        
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+
         self.numberEdit = QtWidgets.QLineEdit(self.centralwidget)
         self.numberEdit.setGeometry(QtCore.QRect(10, 20, 401, 33))
         self.numberEdit.setObjectName("numberEdit")
@@ -63,7 +65,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle("Python Calculator For Beginners")
         self.numberEdit.setText(_translate("MainWindow", "0"))
         self.numberEdit.setPlaceholderText(_translate("MainWindow", "Number"))
         self.numberEdit_2.setText(_translate("MainWindow", "0"))
